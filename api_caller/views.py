@@ -8,7 +8,8 @@ import requests
 
 user_lat =  47.9365944
 user_lon = -122.219628
-def home(request):
+
+def find_closest_stops(request):
     response = requests.get('http://api.pugetsound.onebusaway.org/api/where/stops-for-route/1_100275.json?key=TEST&version=2')
     bus_data = response.json()
     bus_stops = bus_data['data']['references']['stops']

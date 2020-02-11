@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import home
+from .views import find_closest_stops
 urlpatterns=[
-    path('bus_data/', home, name='bus_data')
+    path('bus_data/<lat>/<lon>', find_closest_stops, name='bus_data')
     # path('some_path/<int:pk>/', detail_view.as_view( ), name='abc')
 ]
