@@ -48,3 +48,4 @@ def find_closest_stops(request, lat, lon):
     print('next_closest: ', name_of_next_closest, ' ', next_closest, ' degrees', 'direction: ', next_closest_direction)
 
     return HttpResponse(f'<h1>Success!\n User_lat: {lat}\n User_lon: {lon}\n name_of_closest: {name_of_closest}\n direction: {closest_direction}\n name_of_next_closest: {name_of_next_closest}\n direction: {next_closest_direction}</h1>')
+
